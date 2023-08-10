@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+     <!-- Google reCAPTCHA CDN -->
+    <script src=
+"https://www.google.com/recaptcha/api.js" async defer>
+    </script>
+  </head>
+  <body>
+    <form action="http://localhost:8000/api/f/s1tArC" method="POST">
+      <input type="file" id="file" name="file" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="hidden" id="hidden" name="hidden"/><br /><br />
+      <!-- div to show reCAPTCHA -->
+            <div class="g-recaptcha"
+                 data-sitekey="6Ld-MGwnAAAAAOkoQYElt6F4gRqsbyU48QBbCVrv">
+            </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
